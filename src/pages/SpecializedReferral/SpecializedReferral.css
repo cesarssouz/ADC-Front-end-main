@@ -1,0 +1,128 @@
+/* Estrutura Principal */
+.referral-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f7f8fa;
+  font-family: Arial, sans-serif;
+}
+
+.referral-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #343a40; /* Cinza escuro */
+}
+
+
+/* Cartões */
+.referral-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Aumenta a largura dos cards */
+  padding: 30px; /* Aumenta o espaçamento interno */
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto; /* Mantém a altura adaptável */
+  min-height: 400px; /* Aumenta a altura mínima */
+}
+
+.referral-cards {
+  display: flex;
+  justify-content: center; /* Centraliza os cards */
+  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+}
+
+.referral-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.referral-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.referral-image {
+  width: 100%; /* Ocupa toda a largura do card */
+  height: auto; /* Ajusta a altura proporcionalmente */
+  max-height: 150px; /* Altura máxima para limitar o tamanho */
+  object-fit: cover; /* Ajusta a imagem para preencher o espaço */
+  margin-bottom: 15px; /* Espaçamento entre a imagem e o título */
+  border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
+}
+
+
+.referral-button {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.referral-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.referral-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão Geral */
+.immediate-help {
+  margin-top: 50px;
+}
+
+.immediate-help p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.general-button {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.general-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .referral-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .referral-card {
+    width: 100%;
+  }
+}
+
+  

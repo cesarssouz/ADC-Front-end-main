@@ -1,0 +1,137 @@
+/* ConsultationPsychologist.css */
+.psychologist-main-wrapper {
+  background-color: #4682B4;
+  font-family: Arial, sans-serif;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.psychologist-consultation-page h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.psychologist-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  gap: 20px;
+}
+
+.psychologist-image-container {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.psychologist-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.psychologist-form-container {
+  flex: 1;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.psychologist-form-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.psychologist-form input,
+.psychologist-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.psychologist-form textarea {
+  resize: none;
+}
+
+.psychologist-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.psychologist-form button:hover {
+  background-color: #0056b3;
+}
+
+.psychologist-description {
+  margin-top: 40px;
+  text-align: left;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.psychologist-description h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.psychologist-description ul {
+  list-style: none;
+  padding: 0;
+}
+
+.psychologist-description ul li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.psychologist-description ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .psychologist-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .psychologist-image-container,
+  .psychologist-form-container {
+    width: 100%;
+    max-width: 500px;
+  }
+}

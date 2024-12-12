@@ -1,0 +1,106 @@
+/* Container geral */
+.checkout-container {
+    display: flex;
+    flex-direction: column; /* Coloca o título e o formulário em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Faz o container ocupar a altura total da tela */
+    padding: 2rem;
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    font-family: Arial, sans-serif;
+}
+  
+/* Título */
+.checkout-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #343a40; /* Cinza escuro */
+}
+  
+/* Formulário */
+.checkout-form {
+    width: 100%; /* Mantém o formulário responsivo */
+    max-width: 600px; /* Aumenta a largura máxima do formulário */
+    background-color: #fff; /* Fundo branco */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+  
+/* Label dos campos */
+.checkout-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #495057; /* Cinza médio */
+}
+  
+/* Campos de input */
+.checkout-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0rem; /* Espaçamento entre os campos */
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #f8f9fa;
+}
+  
+.checkout-form input:focus {
+    outline: none;
+    border-color: #007bff; /* Azul no foco */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+  
+/* Campos de detalhes do cartão */
+.card-details {
+    display: flex;
+    gap: 1.5rem; /* Define o espaçamento horizontal entre os dois campos */
+    margin-bottom: 2rem; /* Espaçamento inferior entre este grupo e o próximo elemento */
+    justify-content: flex-start; /* Garante alinhamento à esquerda */
+    align-items: center; /* Centraliza verticalmente os campos no caso de alturas diferentes */
+}
+
+  
+.card-details div {
+    flex: 1 1 45%; /* Permite dividir igualmente os campos em uma linha */
+}
+  
+/* Botão */
+.checkout-form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Azul */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.checkout-form button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
+  
+/* Link de voltar */
+.checkout-container a {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #007bff; /* Azul */
+    text-decoration: none; 
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transição suave no hover */
+}
+  
+.checkout-container a:hover {
+    text-decoration: none; 
+    color: #0056b3; 
+}
+
+  
+  

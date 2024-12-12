@@ -1,0 +1,118 @@
+/* Seção Por que a ADC */
+.why-adc-section {
+  background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg?t=st=1731544360~exp=1731547960~hmac=0e6329c0c97bdce882408f7aef2c00754e1a860417ff3dafa038d4c5fcef6c0e&w=1060');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+  color: #333; 
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contêiner do título com fundo azul */
+.title-container {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  width: 100vw;
+  margin-left: -20px;
+  height: 25vh;
+  background-color: #4682B4; 
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo do título */
+.title-container h2 {
+  margin: 0;
+  font-size: 2.8em;
+  color: white;
+  font-weight: 700;
+}
+
+/* Container geral de cartões */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+/* Cartões personalizados */
+.why-card {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #333;
+  transition: all 0.2s ease;
+  max-width: 350px;
+}
+
+/* Fundo azul para os cartões */
+.why-card.blue {
+  background-color: #4682B4;
+  color: white;
+  padding: 20px;
+}
+
+/* Fundo branco com texto azul */
+.why-card.white {
+  background-color: white;
+  color: #4682B4;
+  border: 1px solid #4682B4;
+  padding: 20px;
+}
+
+/* Melhorando visual com ajuste responsivo */
+.why-card h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Adicionando hover */
+.why-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cards-container {
+    gap: 15px;
+  }
+
+  .why-card {
+    max-width: 100%;
+  }
+
+  .title-container h2 {
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-container h2 {
+    font-size: 2em;
+  }
+
+  .why-card {
+    padding: 15px;
+  }
+}

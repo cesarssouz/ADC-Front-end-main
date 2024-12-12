@@ -1,0 +1,966 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* General Container */
+.account-type-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #4682B4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.account-type-container h1 {
+  color: #ffffff;
+}
+
+.container-account-escolha {
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+}
+
+.container-escolha {
+  max-width: 500px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.tela-inicial {
+  background-color: #0056b3;
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #fff;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+.tela-inicial:hover {
+  background-color: #001c79;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Step 1: Account Options */
+.account-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.account-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: white;
+
+}
+
+.container-advogado-escolha {
+  display: flex;
+  justify-content: center;
+  padding-top: 65px;
+}
+
+.botao-escolhas {
+  background-color: #0052cc !important;
+  color: white !important;
+  font-family: 'Poppins' !important;
+}
+
+.botao-voltar-escolhas {
+  background-color: #555 !important;
+  color: white !important;
+  font-family: 'Poppins' !important;
+}
+
+.account-option:hover {
+  transform: scale(1.1);
+}
+
+.account-option p {
+  margin-top: 10px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* Professional Options */
+.professional-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  transition: all 0.3 ease;
+}
+
+.professional-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.professional-option:hover {
+  transform: scale(1.1);
+}
+
+.professional-option p {
+  margin-top: 10px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.botao-voltar {
+  background-color: #0056b3 !important;
+  font-family: 'Poppins' !important;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 25px;
+  margin-top: 10px;
+  border: none !important;
+  width: 130px;
+}
+
+.botao-voltar:hover {
+  background-color: #001c79 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Final Layout */
+.final-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0052cc, #6610f2); /* Gradiente roxo e azul */
+  color: white;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Fonte mais moderna */
+  padding: 40px;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animação de Fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo do Título */
+.final-layout h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+/* Estilo do Parágrafo */
+.final-layout p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Estilo do Botão */
+.final-layout button {
+  background-color: #ffffff;
+  color: #8e2de2;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.final-layout button:hover {
+  background-color: #ddd;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.final-layout button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .final-layout {
+    padding: 20px;
+  }
+
+  .final-layout h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+
+  .final-layout p {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .final-layout button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+
+ /* Container Principal */
+.extra-step-container {
+   font-family: Arial, sans-serif;
+   color: #333;
+ }
+ 
+ /* Cabeçalho */
+ /* Estilo do Cabeçalho */
+.adc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f8f9fa;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.adc-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.adc-navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  content: none;
+}
+
+/* Estilo base dos links ou botões de texto */
+.adc-navigation li a {
+  display: inline-block;
+  padding: 5px 10px; /* Espaçamento interno para torná-los clicáveis */
+  color: #333; /* Cor inicial */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  font-size: 16px; /* Tamanho do texto */
+  transition: color 0.3s ease, transform 0.3s ease; /* Suaviza as transições */
+  cursor: pointer; /* Faz o cursor mudar para mãozinha (clicável) */
+}
+
+/* Efeito no hover */
+.adc-navigation li a:hover {
+  color: #007bff; /* Altere para a cor que deseja ao passar o mouse */
+  transform: scale(1.1); /* Aumenta levemente o tamanho */
+}
+
+/* Adicionando um destaque sublinhado no hover */
+.adc-navigation li a::after {
+  content: ""; /* Elemento decorativo */
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff; /* Cor do sublinhado */
+  transition: width 0.3s ease;
+  margin-top: 4px; /* Dá espaço abaixo do texto */
+}
+
+/* Efeito de expansão do sublinhado */
+.adc-navigation li a:hover::after {
+  width: 100%; /* Faz o sublinhado crescer até o tamanho do texto */
+}
+
+.adc-navigation a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.adc-navigation a:hover {
+  color: #007bff;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .adc-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adc-navigation ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+ /* Hero Section */
+ .hero {
+   text-align: center;
+   padding: 60px 20px;
+   background: linear-gradient(135deg, #4a90e2, #8758f3);
+   color: white;
+ }
+ 
+ .hero h1 {
+   font-size: 36px;
+   font-weight: bold;
+   margin-bottom: 20px;
+ }
+ 
+ .hero p {
+   font-size: 16px;
+   margin-bottom: 30px;
+ }
+ 
+ .hero-actions button {
+   padding: 12px 25px;
+   font-size: 14px;
+   font-weight: bold;
+   color: white;
+   background: #3a5dd9;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background 0.3s ease;
+   margin: 0 10px;
+ }
+ 
+ .hero-actions button:hover {
+   background: #2a47a4;
+ }
+ 
+ .hero-icons {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+   gap: 50px;
+ }
+ 
+ .hero-icons div {
+   text-align: center;
+ }
+ 
+ .hero-icons span {
+   font-size: 36px;
+   margin-bottom: 10px;
+   display: block;
+ }
+ 
+ .hero-icons p {
+   font-size: 14px;
+ }
+ 
+ /* Serviços */
+ .services {
+   text-align: center;
+   padding: 60px 20px;
+   background: #f9f9f9;
+ }
+ 
+ .services h2 {
+   font-size: 28px;
+   font-weight: bold;
+   margin-bottom: 40px;
+ }
+ 
+ .service-cards {
+   flex: 0 1 calc(33.33% - 20px);
+  max-width: 300px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+ }
+ 
+ .service-card {
+   background: #ffffff;
+   border-radius: 8px;
+   padding: 25px;
+   width: 3500px;
+   text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ .service-card:hover {
+   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .service-card span {
+   font-size: 48px;
+   color: #3a5dd9;
+   margin-bottom: 15px;
+   display: inline-block;
+ }
+ 
+ .service-card h3 {
+   font-size: 1.2rem;
+   color: #333;
+   margin-bottom: 10px;
+ }
+ 
+ .service-card p {
+   font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+ }
+ 
+ .service-card button {
+   padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  color: #007bff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ .service-card button:hover {
+   background-color: #007bff;
+  color: #fff;
+ }
+
+ @media (max-width: 1024px) {
+   .card {
+     flex: 0 1 calc(50% - 20px);
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .card {
+     flex: 0 1 100%;
+   }
+ }
+
+ 
+.adc-extra-container {
+   font-family: Arial, sans-serif;
+   background-color: #f8f9fa;
+   color: #333;
+ }
+ 
+ .adc-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   background: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .adc-logo {
+   font-size: 1.8rem;
+   font-weight: bold;
+   color: #007bff;
+ }
+ 
+ .adc-navigation a {
+   margin: 0 10px;
+   text-decoration: none;
+   color: #555;
+   font-weight: bold;
+ }
+ 
+ .adc-navigation a:hover {
+   color: #007bff;
+ }
+ 
+ .adc-hero {
+  text-align: center;
+  padding: 60px 20px; /* Mais espaçamento */
+  background: linear-gradient(135deg, #4a90e2, #8758f3); /* Gradiente de fundo */
+  color: white;
+}
+
+.adc-hero h1 {
+  font-size: 3rem; /* Tamanho maior do título */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.adc-hero p {
+  font-size: 1.5rem; /* Texto maior */
+  margin-bottom: 40px; /* Espaço maior abaixo do parágrafo */
+  color: #ffffff; /* Texto com tom mais suave */
+}
+
+.adc-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço maior entre os botões */
+}
+
+.adc-hero-actions button {
+  margin: 0;
+  padding: 15px 30px; /* Botões maiores */
+  border: none;
+  background: white;
+  color: #4a90e2;
+  font-weight: bold; /* Texto em negrito */
+  font-size: 1rem;
+  border-radius: 25px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.adc-hero-actions button:hover {
+  background: #007bff;
+  color: white;
+}
+
+.adc-hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Espaço maior entre os ícones */
+  margin-top: 40px;
+}
+
+.adc-hero-icons div {
+  text-align: center;
+  color: white;
+}
+
+.adc-hero-icons span {
+  font-size: 3rem; /* Tamanho maior dos ícones */
+  margin-bottom: 10px;
+  display: block;
+}
+
+.adc-hero-icons p {
+  font-size: 1.3rem; /* Texto descritivo */
+  margin-top: 10px;
+  font-weight: bold;
+  
+}
+
+ 
+/*  */
+
+ .adc-services {
+  padding: 60px 20px; /* Mais espaçamento ao redor */
+  background-color: #f7f8fa; /* Fundo claro */
+}
+
+.adc-services h2 {
+  font-size: 32px; /* Tamanho maior do título */
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px; /* Espaçamento entre o título e os cards */
+}
+
+
+.adc-service-cards {
+  display: flex;
+  justify-content: space-between; /* Espaçamento uniforme */
+  flex-wrap: wrap; /* Permite que os cards se ajustem em telas menores */
+  gap: 30px; /* Espaço entre os cards */
+  max-width: 1200px; /* Largura máxima da seção */
+  margin: 0 auto; /* Centraliza os cards */
+}
+
+.adc-service-card {
+  flex: 1 1 calc(32% - 20px); /* Ajusta largura para cerca de 32% do container */
+  min-width: 350px; /* Largura mínima moderada */
+  max-width: 500px; /* Largura máxima */
+  background: #ffffff; /* Fundo branco */
+  border: 1px solid #ddd; /* Borda leve */
+  border-radius: 12px; /* Bordas arredondadas */
+  text-align: left; /* Texto alinhado à esquerda */
+  padding: 25px; /* Espaçamento interno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.adc-service-card:hover {
+  transform: translateY(-10px); /* Efeito de elevação */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+.adc-service-card span {
+  display: block;
+  font-size: 48px; /* Ícone grande */
+  color: #007bff; /* Cor azul para o ícone */
+  margin-bottom: 20px; /* Espaçamento abaixo do ícone */
+}
+
+.adc-services h2 {
+  font-size: 35px; /* Tamanho do título */
+  font-weight: bold; /* Título em negrito */
+  text-align: center; /* Centralizado */
+  color: #333; /* Cor do texto */
+  margin-bottom: 40px; /* Espaçamento entre o título e os cards */
+
+}
+
+.adc-service-card h3 {
+  font-size: 20px; /* Tamanho maior do título */
+  margin-bottom: 15px; /* Espaçamento abaixo do título */
+  font-weight: bold;
+  color: #333;
+  min-height: 40px; /* Altura mínima para alinhamento */
+}
+
+.adc-service-card p {
+  font-size: 16px; /* Texto descritivo */
+  color: #555;
+  line-height: 1.5; /* Espaçamento entre linhas */
+  margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+  min-height: 60px; /* Altura mínima para alinhamento */
+}
+
+.adc-service-card button {
+  padding: 10px 20px; /* Botão maior */
+  font-size: 16px; /* Texto maior no botão */
+  font-weight: bold;
+  color: #007bff;
+  background: none;
+  border: 2px solid #007bff; /* Borda azul */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.adc-service-card button:hover {
+  background: #007bff; /* Fundo azul no hover */
+  color: #fff; /* Texto branco no hover */
+}
+
+/* Garantindo alinhamento uniforme */
+.adc-service-card {
+  display: flex;
+  flex-direction: column; /* Mantém os elementos alinhados verticalmente */
+  justify-content: space-between; /* Espaça os elementos uniformemente */
+  height: 100%; /* Garante que todos os cards tenham a mesma altura */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .adc-service-cards {
+    flex-direction: column; /* Cards em coluna em telas menores */
+    gap: 20px; /* Espaçamento reduzido entre os cards */
+  }
+
+  .adc-service-card {
+    max-width: 100%; /* Ocupa toda a largura da tela */
+  }
+}
+
+
+/* Estilo Geral da Seção */
+.adc-impact-stats {
+  background-color: #f7f8fa; /* Cor de fundo leve */
+  padding: 40px 20px; /* Espaçamento em volta */
+}
+
+.adc-impact-stats h2 {
+  text-align: center;
+  font-size: 28px; /* Tamanho maior do título */
+  font-weight: bold;
+  margin-bottom: 30px; /* Espaço abaixo do título */
+  color: #333;
+}
+
+/* Card de Estatísticas */
+.adc-statistics-card {
+  background: #ffffff; /* Fundo branco do card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px 40px; /* Espaçamento interno */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaçamento entre itens */
+  align-items: center; /* Alinhamento vertical */
+  max-width: 1250px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza o card */
+  flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+  gap: 20px; /* Espaço entre os itens */
+}
+
+/* Estilo dos Itens */
+.adc-stat-item {
+  text-align: center;
+  flex: 1; /* Divide o espaço igualmente */
+  min-width: 150px; /* Tamanho mínimo */
+}
+
+.adc-icon {
+  font-size: 50px; /* Tamanho maior do ícone */
+  color: #4682B4; /* Cor azul do ícone */
+  margin-bottom: 10px; /* Espaço abaixo do ícone */
+}
+
+.adc-stat-item h3 {
+  font-size: 40px; /* Tamanho do número */
+  margin: 5px 0; /* Espaçamento em cima e embaixo */
+  font-weight: bold;
+  color: #333;
+}
+
+.adc-impact-stats h2 {
+  text-align: center; /* Centraliza o título */
+  font-size: 36px; /* Aumenta o tamanho do título */
+  font-weight: bold; /* Deixa o texto mais forte */
+  color: #333; /* Cor do texto */
+  margin-bottom: 40px; /* Adiciona espaço abaixo do título */
+}
+
+.adc-stat-item p {
+  font-size: 25px; /* Tamanho menor para o texto descritivo */
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .adc-statistics-card {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    text-align: center;
+  }
+
+  .adc-stat-item {
+    margin-bottom: 20px; /* Espaço entre os itens */
+  }
+}
+
+/* Blog em Destaque */
+.adc-featured-blog {
+  padding: 60px 20px; /* Aumenta o espaço ao redor da seção */
+  background-color: #f8f9fa;
+}
+
+.adc-featured-blog h2 {
+  font-size: 35px; /* Título maior */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px; /* Mais espaço abaixo do título */
+  color: #333;
+}
+
+.adc-blog-cards {
+  display: flex;
+  justify-content: center; /* Alinha os cards ao centro */
+  gap: 30px; /* Aumenta o espaço entre os cards */
+  flex-wrap: wrap; /* Permite quebra de linha para responsividade */
+  margin: 0 auto; /* Centraliza o container */
+  max-width: 1300px; /* Limita a largura total */
+}
+
+.adc-blog-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 calc(30% - 20px); /* Define 3 cards por linha */
+  max-width: 400px; /* Aumenta o tamanho máximo */
+  min-width: 320px; /* Define um limite mínimo */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.adc-blog-card:hover {
+  transform: translateY(-10px); /* Efeito de hover mais destacado */
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.adc-blog-card img {
+  width: 100%;
+  height: 200px; /* Altura para imagens */
+  object-fit: cover;
+  background-color: #eaeaea;
+}
+
+.adc-blog-card-content {
+  padding: 25px; /* espaçamento interno */
+  text-align: left;
+}
+
+.adc-blog-card h3 {
+  font-size: 22px; /* Fonte para títulos */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px; /* espaço abaixo do título */
+}
+
+.adc-blog-card .adc-blog-date {
+  font-size: 17px; /* fonte da data */
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.adc-blog-card p {
+  font-size: 17px; /* Texto */
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 25px; /* Mais espaçamento no texto */
+}
+
+.adc-blog-card button {
+  display: inline-block;
+  padding: 10px 20px; /* Botão maior */
+  font-size: 16px; /* Texto maior no botão */
+  font-weight: bold;
+  color: #007bff;
+  background: none;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.adc-blog-card button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Botão "Ver Todos os Posts" */
+.adc-view-all-posts {
+  display: inline-block;
+  margin: 40px auto; /* Espaçamento maior em torno do botão */
+  text-align: center;
+  font-size: 18px; /* Botão mais destacado */
+  color: #007bff;
+  background: none;
+  border: 1px solid #007bff; /* Adiciona borda ao botão */
+  padding: 12px 30px; /* Maior espaçamento interno */
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.adc-view-all-posts:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Responsividade para telas médias */
+@media (max-width: 1024px) {
+  .adc-blog-cards {
+    gap: 20px; /* Reduz o espaço entre os cards */
+  }
+
+  .adc-blog-card {
+    flex: 1 1 calc(45% - 20px); /* Ajusta para 2 cards por linha */
+  }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .adc-blog-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Espaço maior entre os cards */
+  }
+
+  .adc-blog-card {
+    max-width: 100%;
+    flex: none; /* Ocupa 100% em telas pequenas */
+  }
+}
+
+ .container-escolha-normal {
+  display: flex;
+  justify-content: center;
+  padding-top: 110px;
+
+
+
+ }

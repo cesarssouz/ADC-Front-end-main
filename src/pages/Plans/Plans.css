@@ -1,0 +1,117 @@
+.plans-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .plan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan-header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ícone e título */
+    gap: 0.5rem; /* Espaço entre o ícone e o texto */
+    margin-bottom: 1rem;
+  }
+  
+  .plan-icon {
+    font-size: 1.9rem; /* Tamanho do ícone */
+    color: #007bff; /* Cor do ícone */
+    position: relative; /* posição do ícone */
+    top: -3px; 
+  }
+  
+  .plan-card h2 {
+    font-size: 2rem; /* Tamanho do texto */
+    font-weight: 600; /* semibold */
+    color: #007bff; /* Cor */
+    margin: 0; 
+  }
+  
+  
+  .price {
+    font-size: 1.8rem;
+    color: #000501;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+/* Aplica "✔" apenas às listas dentro da tela de Planos */
+.plans-container ul li::before {
+    content: "✔";
+    color: #007bff;
+    margin-right: 0.5rem;
+}
+
+/* Remove o estilo global para evitar aplicar em outras telas */
+ul li::before {
+    content: none;
+}
+  
+  button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  

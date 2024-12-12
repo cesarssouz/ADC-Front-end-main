@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5; /* Fundo branco para toda a página */
+}
+
+
+.article-background {
+    background-color: #f5f5f5; /* Fundo branco */
+    width: 100%; 
+    height: auto; /* Ajusta a altura com base no conteúdo */
+    min-height: 100vh; /* Garante que o fundo cubra toda a tela */
+    padding: 20px 0; /* Espaçamento vertical */
+    position: relative; 
+}
+
+.article-page {
+    background-color: #fff; /* Fundo branco */
+    width: 80%; /* Ajustar largura */
+    max-width: 1200px; /* Limite máximo */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+    overflow: hidden;
+    position: relative; 
+    min-height: 1200px; /* Altura mínima muito maior */
+}
+
+.article-image {
+    width: 100%;
+    height: 300px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem proporcionalmente */
+    border-radius: 10px 10px 0 0; /* Bordas arredondadas na parte superior */
+    background-color: #e0e0e0; /* Fundo cinza caso a imagem não carregue */
+}
+
+.article-page a {
+    display: block;
+    color: #5a4dfb;
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: left;
+    position: relative;
+    top: -19px;
+    font-size: 1.2rem;
+}
+
+.article-page a:hover {
+    text-decoration: underline;
+}
+
+.article-content {
+    padding-bottom: 150px; 
+    text-align: left;
+    font-size: 1.9rem;
+}
+.article-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.article-content p, .article-content p strong {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+

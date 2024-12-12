@@ -1,0 +1,382 @@
+.recovery-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f9; /* Uniformiza o fundo */
+}
+
+
+.recovery-header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f9; /* Remove qualquer azul */
+  border-bottom: 1px solid #f4f4f9;
+}
+
+.attack-types,
+.identification,
+.mitigation-steps,
+.tools,
+.consulting {
+  padding: 40px 20px;
+  background-color: #f4f4f9;
+  margin: 20px 0;
+}
+
+.attack-cards,
+.mitigation-cards,
+.tool-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Centraliza com espaçamento */
+}
+
+.attack-cards {
+  display: flex;
+  gap: 10px; /* Reduz o espaçamento entre os cards */
+  flex-wrap: wrap;
+  justify-content: center; /* Mantém os cards centralizados */
+}
+
+.attack-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(25% - 10px); /* Ajusta para 4 colunas com menor espaço */
+  max-width: 300px; /* Limita a largura em telas maiores */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Alinha o texto e o título à esquerda */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.attack-types {
+  padding: 40px 20px;
+  background-color: #f7f8fa;
+  margin: 20px 0;
+  text-align: left; /* Alinha o conteúdo da seção à esquerda */
+}
+
+/* Seções de Títulos */
+.attack-types h2,
+.identification h2,
+.mitigation-steps h2{
+  font-size: 24px; /* Mesma fonte para ambos */
+  font-weight: bold;
+  text-align: left; /* Alinha à esquerda */
+  margin-left: 40px; /* Margem à esquerda para afastar do início */
+  margin-left: 330px;
+}
+
+
+.attack-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; /* Alinha o título à esquerda */
+}
+
+.attack-card p {
+  font-size: 14px;
+  color: #555;
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+
+.learn-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.consulting-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.consult-button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.consult-button:hover {
+  background: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .attack-card,
+  .mitigation-card,
+  .tool-card {
+    width: calc(50% - 20px); /* Ajusta para 2 colunas */
+  }
+}
+
+@media (max-width: 768px) {
+  .attack-card,
+  .mitigation-card,
+  .tool-card {
+    width: 100%; /* Ajusta para 1 coluna */
+  }
+}
+
+.identification-text {
+  flex: 1;
+  text-align: left;
+  margin-left: 330px; /* Mantém alinhamento principal */
+}
+
+.identification-text p,
+.identification-text ul,
+.identification-text ul li,
+.identification-text a {
+  margin-left: 0; /* Remove qualquer deslocamento extra */
+  padding-left: 0; /* Garante que todos os textos fiquem alinhados */
+}
+
+.identification-text ul {
+  list-style-type: disc;
+  margin-top: 10px; /* Espaçamento entre o texto e a lista */
+  padding-left: 20px; /* Para manter o marcador */
+  padding-left: 4px;
+}
+
+.identification-text ul li {
+  margin-bottom: 3px; /* Espaço entre os itens da lista */
+}
+
+.identification-text a.learn-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0px; /* Reduz o espaço entre o link e os itens da lista */
+  display: inline-block;
+}
+
+.identification-image {
+  flex: 1;
+  max-width: 35%; /* Limita a largura da imagem */
+  position: relative; /* Torna a imagem posicionável */
+  top: -300px; /* Move para cima */
+  right: -970px; /* Move para a direita */
+}
+
+.identification-image img {
+  width: 100%; /* A imagem ocupa toda a largura do contêiner */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 500px;
+}
+
+.mitigation-steps {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  margin-top: -300px;
+}
+
+.mitigation-steps h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mitigation-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: flex-start; /* Alinha os cards à esquerda */
+  margin-left: 330px; /* Alinha os cards com o título */
+  max-width: 1300px; /* Ajusta a largura total do contêiner */
+}
+
+.mitigation-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px; /* Ajusta o espaçamento interno */
+  width: calc(31.1% - 15px); /* Aumenta a largura dos cards mantendo 3 na linha */
+  max-width: 420px; /* Limita a largura de cada card */
+  height: 150px; /* Altura ajustada */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mitigation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mitigation-card i {
+  font-size: 20px; /* Tamanho do ícone */
+  color: #007bff; /* Cor do ícone */
+}
+
+.mitigation-card span {
+  font-size: 20px;
+  color: #333;
+  font-weight: 200;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .mitigation-card {
+    width: calc(48% - 20px); /* Dois cards por linha em telas menores */
+    height: 140px;
+  }
+
+  .mitigation-cards {
+    margin-left: 20px; /* Ajusta alinhamento para telas menores */
+    max-width: calc(100% - 40px); /* Garante largura responsiva */
+  }
+}
+
+@media (max-width: 768px) {
+  .mitigation-card {
+    width: 100%; /* Um card por linha */
+    height: 120px;
+  }
+
+  .mitigation-cards {
+    margin-left: 0;
+  }
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  justify-content: space-between; /* Espaça os elementos igualmente dentro do card */
+  align-items: flex-start; /* Alinha os elementos à esquerda */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(30% - 20px); /* Mantém 3 cards por linha */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 200px; /* Garante altura mínima */
+}
+
+.tool-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.tool-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5; /* Define o espaçamento entre linhas */
+}
+
+.tool-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: flex-start; /* Garante que o link fique alinhado à esquerda */
+  margin-left: -1px;
+}
+
+.tool-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinha os cards à esquerda */
+  margin-left: 330px; /* Alinha com o título */
+  max-width: 1360px; /* Define a largura máxima do contêiner */
+  position: relative; /* Garante que os elementos internos sejam posicionados corretamente */
+}
+
+.tools h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 330px; /* Alinha à esquerda */
+}
+
+.tools-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-left: 330px; /* Alinha com os outros elementos da página */
+}
+
+.consulting {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.consulting h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left; /* Alinha o título à esquerda */
+  margin-left: 330px; /* Ajusta o alinhamento */
+}
+
+.consulting-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+  max-width: 1200px; /* Define largura máxima */
+  margin: 0 auto 40px auto; /* Centraliza horizontalmente */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 330px;
+}
+
+.consulting-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+  flex: 1; /* O texto ocupa o máximo disponível */
+  text-align: left;
+}
+
+.consult-button {
+  padding: 10px 20px;
+  background: #4682B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o texto e o ícone */
+}
+
+.consult-button:hover {
+  background: #007bff;
+}
+
+.consult-button::after {
+  content: '→'; /* Adiciona o ícone da seta */
+  font-size: 18px;
+}
